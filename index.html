@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="styles.css">
-	<link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet'>
-	<link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
-	<link href='https://fonts.googleapis.com/css?family=Delius' rel='stylesheet'>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Deven's Recipes</title>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<h1 id = "mainhead">
-	Deven's Recipes
-	</h1>
-	<ul id = "mainlist">
-		<li class ="button"><a href="recipes/pasta.html">Lasagna</a></li>
-		<li class ="button"><a href="recipes/brownies.html">Brownies</a></li>
-		<li class ="button"><a href="recipes/chickensandwich.html">Chicken Sandwich</a></li>
-	</ul>
-	<img src="https://nationaltoday.com/wp-content/uploads/2021/07/shutterstock_1518533924-min.jpg"height="300" width="400">
+	<div id = "everything">
+		<div id="header"><h1>Deven's Dangerous Blackjack Table</h1>
+		</div>
+		<div id="game">
+			<div id="row1">
+				<div id="dealer"><p>Dealer</p></div>
+				<div id="dealerCount"><p></p></div>
+				<div class="score" id="dealerscore"><p>Score</p></div>
+			</div>			
+			<div id="row2">
+				<img src = "images/blank.svg" id="dealercard1">
+				<img src = "images/blank.svg" id="dealercard2">
+				<img src = "images/blank.svg" id="dealercard3">
+				<img src = "images/blank.svg" id="dealercard4">
+			</div>			
+			
+			<div id="row4">
+				<div id="player"><p>Player</p></div>
+				<div id="playerCount"><p></p></div>
+				<div class="score" id="playerscore"> <p>Score</p></div>
+			</div>		
+			<div id="row5">
+				<div id = "fiveleft">
+				<img src = "images/blank.svg" id="playercard1">
+				<img src = "images/blank.svg" id="playercard2">
+				<img src = "images/blank.svg" id="playercard3">
+				<img src = "images/blank.svg" id="playercard4">
+				</div>
+				<div id = "fiveright">
+					<div id="options">
+						<button class="hit" onclick="hit()" disabled="true" id="hit">Hit</button>
+						<button class="stand" onclick="stand()" disabled="true" id="stand">Stand</button>
+						<button class="reset" onclick="reset()" id="reset">Reset</button>
+					</div>
+					<div id="messages"><p></p></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

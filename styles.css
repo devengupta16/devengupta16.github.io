@@ -1,74 +1,141 @@
-#mainhead {
-	background-color: #FFB9B7;
-	width: 400px;
-	font-family: 'Delius';
-	border: dotted 4px #FC8F8C;
-	padding: 10px;
-	text-align: center;
-	height: 40px;
+div {
+	border: 2px green solid;
 }
 
-#mainlist {
+#header {
+	height: 100px;
+	width:auto;
+	text-align: center;
 
-	color: red;
-	font-family: 'Amiri';
+
+}
+
+#game {
+	height: 625px;
+	width:auto;
+	background-color: #5E875E;
+	background-image: url("https://media.istockphoto.com/id/1218354234/vector/poker-table-background-in-green-color.jpg?s=612x612&w=0&k=20&c=h5ub96YRuOOMbLeBMPgQ4tnvgg7HFrJDo96jXQBoVtQ=");
+}
+
+#everything {
+	display:flex;
+	flex-direction: column;
+}
+
+#game {
+	display:flex;
+	flex-direction: column;
+}
+
+#row1, #row2, #row3, #row4, #row5 {
+	display:flex;
+	flex-direction: row;
+	height: 200px;
+}
+
+#options {
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border: 0px;
+	
+	height: 200px;
+	align-self: center;
+	width: 105px;
+
+}
+
+#hit, #stand, #reset {
+	height: 50px;
+	width: 100px;
+	background-color: #CF605C;
+}
+
+#playercard1, #playercard2, #dealercard1, #dealercard2, #playercard3, #playercard4, #dealercard3, #dealercard4{
+	height: 150px;
+	width: 100px;
+	margin: 25px;
+	background-color: red;
+	border-radius: 10px;
+	align-self: center;
+}
+
+#row5 {
+	
+	height: 250px;
+}
+
+#fiveleft {
+	display:flex;
+	flex: 4;
+	justify-content: center;
+	border: 0px;
+}
+
+#fiveright {
+	flex: 3;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+
+#row4, #row1 {
+	height:50px;
+	justify-content: space-between;
+}
+
+#row3 {
+	justify-content: flex-end;
+	height: auto;
+}
+
+#row2 {
+	justify-content: center;
+	height: 250px;
+}
+
+#player, #dealer, .score {
+	width: 200px;
+	background-color: ;
+}
+
+
+
+p, #messages, #dealerscore, #playerscore {
+	text-align:center;
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 0px;
+	color: white;
+
+}
+
+#messages {
+	width:200px;
+	border: 3px inset;
+	height: auto;
+	align-self: center;
+
+}
+
+button {
+	background-color: #CF605C;
+	height:50px;
+	width: 100px;
 	font-size: 20px;
 }
 
-
-#quote {
-	border: solid 3px;
-	padding: 5px;
-	margin: 5px;
-	width: 600px;
-}
-
-img {
- 	border: groove 10px #D17B79;
- }
-
-body {
-	background-color: #FDE8DD;
-}
-
-
-#header {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
+#dealerCount, #playerCount {
+	width: 50px;
+	height: 50px;
+	text-align:center;
+	font-size: 30px;
 	font-weight: bold;
-	font-family: 'Alice';
+	margin-top: 0px;
+	color: white;
 }
 
-#main {
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-}
 
-.button {
-	border: solid #47A09E 3px;
-	margin: 3px;
-	width: 200px;
-	padding: 5px;
-	background-color: #E9E7E6;
-	text-align: center;
 
-}
-
-.background {
-	background-color:#FFB9B7;
-	padding: 5px;
-	width: 300px;
-	border-style: inset;
-}
-
-.info {
-	background-color: #EEC8CD;
-	width: 500px;
-	padding: 10px;
-	padding-left: 30px;
-	font-family: "Monaco", Monospace;
-	font-size: 12px;
-}
 
